@@ -7,7 +7,7 @@ const express=require("express")
 const app=express()
 app.use(express.json())
 
-
+const port =process.env.PORT || 3002
 
 // console.log(mongo);
 
@@ -30,4 +30,6 @@ app.get("/users", function(req,res,next){
     res.send("server starts");
 })
 
-app.listen(3002)
+app.listen(port, function(){
+    console.log("server connected")
+  });
