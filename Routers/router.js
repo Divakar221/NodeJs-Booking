@@ -5,7 +5,7 @@ var router= express.Router();
 const room=require("../Modules/Booking")
 const customer=require("../Modules/Customer")
 
-var a=[{a,b,c}]
+
 
 
 
